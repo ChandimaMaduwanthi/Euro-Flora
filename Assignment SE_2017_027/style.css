@@ -6,13 +6,13 @@ body{
 
 .main_header{
 	height:50px;
-	background-color: white;
+	background: radial-gradient(circle, white, rgb(223, 196, 196));
 }
 
 .main_header a{
 	float: right;
 	text-decoration:none;
-	color:brown;
+	color:maroon;
 	padding: 15px;
 }
 
@@ -23,9 +23,10 @@ body{
 .container{
 	width: 70%;
 	background-color:white;
-	color: brown;
+	color: rgb(100, 42, 42);
 	margin-left: 12%;
 	padding:50px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .name{
@@ -68,5 +69,6 @@ body{
 
 .gifts{
 	margin-right:40px;
+	height: 400px;
 }
 

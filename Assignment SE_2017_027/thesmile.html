@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <title>The Smile</title>
 </head>
 <body>
@@ -22,30 +23,52 @@
     <div class="container">
         <div class="box1">
             <div class="box">
-                <img src="images/the smile.jpg" alt="">
-                <p>Price (delivery included)</p><hr>
+                <img src="images/the smile.jpg" alt="" width="80%">
+                <p>Price (delivery included)</p><hr width="80%" align="left">
+                <div  class="radio">
                 <input type="radio" name="standard" id="">Standard 78.90 € <br>
+                </div><br>
+                <div class="radio">
                 <input type="radio" name="deluxe" id="">Deluxe 98.90 € <br>
+                </div><br>
+                <div class="radio">
                 <input type="radio" name="premium" id="">Premium 118.90 € <br>
+                </div><br>
                 <div class="total">Total: 78.90 €(delivery included)</div>
                 <p>The Smile 78.90 €</p>
             </div>
             <div class="box11">
-                <h3>The Smile</h3>
-                <p>Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
+                <h1 style="font-family: Playball;">The Smile</h1>
+                <p style="font-weight: bold; font-family: sans-serif;">Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
                     for every occasion. Conveys joy.</p>
-                <p>Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
+                <p style="font-size: 15px;">Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
                     chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
-                    arrangement.</p>
-                
+                    arrangement.</p><br>
+                <hr><br>
                 <form action="">
-                    <label>Delivery date*</label><input type="date" name="deliverydate" id=""><br>
-                    <label>Delivery time</label><input type="radio" name="workingday" id="">Working Day - Free (9 a.m.-9p.m.) <br>
-                    <input type="radio" name="holidays" id="">Sunday and Public Holidays 4.00 € <br>
-                    <label>Quantity*</label><input type="number" name="quantity" id=""><br>
-                    <label>Message</label><textarea name="message" id="" cols="30" rows="10"></textarea><br>
-                    <label>Signature</label><input type="text" name="signature" id=""><br>
+                    <div class="box1">
+                        <div class="boxx"><label>Delivery date*</label></div>
+                        <div><input type="date" name="deliverydate" id=""></div>
+                    </div><br>
+                    <div class="box1">
+                        <div class="boxx"> <label>Delivery time</label></div>
+                        <div><input type="radio" name="workingday" id="">Working Day - Free (9 a.m.-9p.m.) <br><br>
+                            <input type="radio" name="holidays" id="">Sunday and Public Holidays 4.00 € <br></div>
+                   </div><br>
+                   <div class="box1">
+                       <div class="boxx"><label>Quantity*</label></div>
+                       <div><input type="number" name="quantity" id="" style="width: 40%;"><br></div>
+                    </div><br>
+                    <div class="box1">
+                        <div class="boxx"><label>Message</label><br><p style="font-size: 14px;">Out of ideas?Choose a message</p></div>
+                        <div><textarea name="message" id="" cols="50" rows="10"></textarea><p style="font-size: 12px; color: grey;">250 characters remaining</p></div>
+                    </div><br>
+                    <div class="box1">
+                        <div class="boxx"><label>Signature</label></div>
+                        <div><input type="text" name="signature" id=""><p style="font-size: 12px; color: grey;">If the messaged is not signed,it will be delivered anonymously</p></div>
+                    </div><br>
                     <input type="button" value="Continue >>">
+
                 </form>
 
             </div>
