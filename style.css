@@ -1,0 +1,76 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color:grey;
+}
+
+.main_header{
+	height:50px;
+	background-color: white;
+}
+
+.main_header a{
+	float: right;
+	text-decoration:none;
+	color:brown;
+	padding: 15px;
+}
+
+.main_header a:first-child{
+	margin-right:1000px;
+}
+
+.main_header img{
+	margin-left:100px;
+}
+
+.container{
+	width: 60%;
+	background-color:white;
+	color: brown;
+	margin-left: 20%;
+	padding:50px;
+}
+
+.name{
+	font-size:50px;
+	font-weight:bold;
+}
+
+.box1{
+	display:flex;
+}
+
+.box2{
+	position:relative;
+	color:black;
+}
+
+.box3{
+	position:absolute;
+	bottom:70px;
+	right:30px;
+	background-color:rgba(255,255,255,0.6);
+	padding:10px;
+}
+
+.box4{
+	position:relative;
+	color:black;
+}
+
+.box5{
+	position:absolute;
+	bottom:20px;
+	text-align:center;
+	background-color:rgba(255,255,255,0.6);
+}
+
+.gifts_images{
+	display:flex;
+}
+
+.gifts{
+	margin-right:40px;
+}
+
