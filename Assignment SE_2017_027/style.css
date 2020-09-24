@@ -16,6 +16,10 @@ body{
 	padding: 15px;
 }
 
+.main_header a:active, .main_header a:hover{
+	text-decoration: underline;
+}
+
 .main_header img{
 	margin-left:100px;
 }
