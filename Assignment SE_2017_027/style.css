@@ -138,45 +138,4 @@ body{
 		left: -2px;
 	}
 
-/* .tag{
-	padding: 10px;
-	font-size: 18px;
-	border-radius:0 5px 5px 0;
-	float: left;
-	margin-left: 30px;
-	margin-top: 20px;
-	position: relative;
-	font-family: verdana;
-	color: black;
-	border: 1px solid pink;
-	border-left: 0;
-	background: linear-gradient(top, #83de8f 0%,#3a8c49 100%);
-}
-
-.tag:after{
-	content: "";
-	width: 30px;
-	height: 31px;
-	background: linear-gradient(top, #83de8f 0%,#3a8c49 100%);
-	transform: rotate(45deg);
-	display: block;
-	position: absolute;
-	top: 5px;
-	left: -15px;
-	z-index: -1;
-	border: 1px solid pink;
-}
-
-.tag:before{
-	content: "";
-	width: 10px;
-	height: 10px;
-	background: #fff;
-	transform: rotate(45deg);
-	position: absolute;
-	top: 18px;
-	left: -7px;
-	border-radius: 5px;
-	z-index: -1;
-	border: 1px solid pink;
-} */
+	
