@@ -9,6 +9,22 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <title>The Smile</title>
+
+    <script>
+        var price = document.getElementsByClassName('radio').value;
+        var total;
+
+        if(document.getElementsById(r1).checked){
+            total = document.getElementById(r1).value;
+        }else if(document.getElementsById(r2).checked){
+            total = document.getElementById(r2).value;
+        }else if(document.getElementsById(r3).checked){
+            total = document.getElementById(r3).value;
+        }
+
+        document.getElementsByClassName('total').innerHTML = "Total : " +total+ "€(delivery included)";
+    </script>
+
 </head>
 <body>
 
@@ -29,15 +45,15 @@
                 <img src="images/the smile.jpg" alt="" width="80%">
                 <p>Price (delivery included)</p><hr width="80%" align="left">
                 <div  class="radio">
-                <input type="radio" name="standard" id="" style="border-style: double;">Standard 78.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i>
+                <input type="radio" name="price" value="78.90" id="r1">Standard 78.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i>
                 </div><br>
                 <div class="radio">
-                <input type="radio" name="deluxe" id="">Deluxe 98.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i><br>
+                <input type="radio" name="price" value="98.90" id="r2">Deluxe 98.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i><br>
                 </div><br>
                 <div class="radio">
-                <input type="radio" name="premium" id="">Premium 118.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i><br>
+                <input type="radio" name="price" value="118.90" id="r3">Premium 118.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i><br>
                 </div><br>
-                <div class="total">Total: 78.90 €(delivery included)</div>
+                <div class="total">Total: </div>
                 <p>The Smile 78.90 €</p>
             </div>
             <div class="box11">
@@ -55,8 +71,8 @@
                     </div><br>
                     <div class="box1">
                         <div class="boxx"> <label>Delivery time</label></div>
-                        <div><input type="radio" name="workingday" id="">Working Day - Free (9 a.m.-9p.m.) <i style='font-size:24px;' class="fa fa-info-circle"></i><br><br>
-                            <input type="radio" name="holidays" id="">Sunday and Public Holidays 4.00 € <i style='font-size:24px;' class="fa fa-info-circle"></i><br></div>
+                        <div><input type="radio" name="time" id="">Working Day - Free (9 a.m.-9p.m.) <i style='font-size:24px;' class="fa fa-info-circle"></i><br><br>
+                            <input type="radio" name="time" id="">Sunday and Public Holidays 4.00 € <i style='font-size:24px;' class="fa fa-info-circle"></i><br></div>
                    </div><br>
                    <div class="box1">
                        <div class="boxx"><label>Quantity*</label></div>
