@@ -11,18 +11,23 @@
     <title>The Smile</title>
 
     <script>
-        var price = document.getElementsByClassName('radio').value;
-        var total;
+        function func(){
+            let total;
+        const r1=document.getElementById('r1').value;
+        const r2=document.getElementById('r2').value;
+        const r3=document.getElementById('r3').value;
 
-        if(document.getElementsById(r1).checked){
-            total = document.getElementById(r1).value;
-        }else if(document.getElementsById(r2).checked){
-            total = document.getElementById(r2).value;
-        }else if(document.getElementsById(r3).checked){
-            total = document.getElementById(r3).value;
+        if(document.getElementById('r1').checked){
+            total = r1;
+        }else if(document.getElementById('r2').checked){
+            total = r2;
+        }else if(document.getElementById('r3').checked){
+            total = r3;
         }
-
-        document.getElementsByClassName('total').innerHTML = "Total : " +total+ "€(delivery included)";
+        document.getElementById('total').innerHTML = "Total :"+total+"€(delivery included)";
+        document.getElementById('tprice').innerHTML = "The Smile "+total+"€";
+        }
+        
     </script>
 
 </head>
@@ -44,17 +49,19 @@
             <div class="box">
                 <img src="images/the smile.jpg" alt="" width="80%">
                 <p>Price (delivery included)</p><hr width="80%" align="left">
+                <form action="" method="get" id="form1">
                 <div  class="radio">
-                <input type="radio" name="price" value="78.90" id="r1">Standard 78.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i>
+                <input type="radio" name="price" value="78.90" id="r1" data-dynamic="0" checked onclick="func()">Standard 78.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i>
                 </div><br>
                 <div class="radio">
-                <input type="radio" name="price" value="98.90" id="r2">Deluxe 98.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i><br>
+                <input type="radio" name="price" value="98.90" id="r2" data-dynamic="20" onclick="func()">Deluxe 98.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i><br>
                 </div><br>
                 <div class="radio">
-                <input type="radio" name="price" value="118.90" id="r3">Premium 118.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i><br>
+                <input type="radio" name="price" value="118.90" id="r3" data-dynamic="40" onclick="func()">Premium 118.90 € <i style='font-size:24px; margin-left: 330px; margin-top: -10px;' class="fa fa-info-circle"></i><br>
                 </div><br>
-                <div class="total">Total: </div>
-                <p>The Smile 78.90 €</p>
+            </form>
+                <div id="total">Total: 78.90 €(delivery included)</div>
+                <p id="tprice">The Smile 78.90 €</p>
             </div>
             <div class="box11">
                 <h1 style="font-family: Playball;">The Smile</h1>
@@ -64,19 +71,19 @@
                     chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
                     arrangement.</p><br>
                 <hr><br>
-                <form action="">
+                <form action="" class="form2">
                     <div class="box1">
                         <div class="boxx"><label>Delivery date*</label></div>
-                        <div><input type="date" name="deliverydate" id=""></div>
+                        <div><input type="date" name="deliverydate" id="" required></div>
                     </div><br>
                     <div class="box1">
                         <div class="boxx"> <label>Delivery time</label></div>
-                        <div><input type="radio" name="time" id="">Working Day - Free (9 a.m.-9p.m.) <i style='font-size:24px;' class="fa fa-info-circle"></i><br><br>
+                        <div><input type="radio" name="time" id="" checked>Working Day - Free (9 a.m.-9p.m.) <i style='font-size:24px;' class="fa fa-info-circle"></i><br><br>
                             <input type="radio" name="time" id="">Sunday and Public Holidays 4.00 € <i style='font-size:24px;' class="fa fa-info-circle"></i><br></div>
                    </div><br>
                    <div class="box1">
                        <div class="boxx"><label>Quantity*</label></div>
-                       <div><input type="number" name="quantity" id="" style="width: 40%;"><br></div>
+                       <div><input type="number" name="quantity" id="" style="width: 40%;" required><br></div>
                     </div><br>
                     <div class="box1">
                         <div class="boxx"><label>Message</label><br><p style="font-size: 14px;">Out of ideas?Choose a message</p></div>
@@ -86,7 +93,7 @@
                         <div class="boxx"><label>Signature</label></div>
                         <div><input type="text" name="signature" id=""><p style="font-size: 12px; color: grey;">If the messaged is not signed,it will be delivered anonymously</p></div>
                     </div><br>
-                    <input type="button" value="Continue >>" style="color: white; background-color: marron;">
+                    <input type="submit" value="Continue >>" style="color: white; background-color: marron;">
 
                 </form>
 
