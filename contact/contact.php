@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Contact</title>
@@ -13,12 +13,12 @@
 <body style="background-color: white;">
     <header class="main_header">
         <img src="images/logo-small.png">
-        <a class="fa fa-comment" href=" chat.html ">Chat</a>
-        <a class="fa fa-phone" href=" orderbyphone.html ">Order by phone</a>
-        <a class="fa fa-cogs" href=" order.html ">How to order</a>
-        <a class="fa fa-camera" href=" gallery.html ">Gallery</a>
-        <a class="fa fa-bars" href=" theflorist.html ">The florist</a>
-        <a class="fa fa-envelope" href=" contact.html ">Contact us</a>
+        <a class="fa fa-comment" href=" ../other_pages/chat.html ">Chat</a>
+        <a class="fa fa-phone" href=" ../other_pages/orderbyphone.html ">Order by phone</a>
+        <a class="fa fa-cogs" href=" ../other_pages/order.html ">How to order</a>
+        <a class="fa fa-camera" href=" ../other_pages/gallery.html ">Gallery</a>
+        <a class="fa fa-bars" href=" ../other_pages/theflorist.html ">The florist</a>
+        <a class="fa fa-envelope" href=" ../contact/contact.html ">Contact us</a>
         <a class="fa fa-home" href=" index.html ">Home</a>
     </header>
 <div style="padding-left:100px; padding-right: 100px;">
@@ -27,7 +27,7 @@
         request will be read and managed in real time. If you have already placed an order you can call the
         phone number dedicated to the customers, you received in the summary email.</p>
 
-        <a href="view.php"><button>View</button></a>
+        <a href="contact/view.php"><button>View</button></a>
 
         <form action="_contact.php" method="POST" enctype="multipart/form-data">
             <div class="box1">
