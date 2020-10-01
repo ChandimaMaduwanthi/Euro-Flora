@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Contact</title>
@@ -12,17 +12,17 @@
 </head>
 <body style="background-color: white;">
     <header class="main_header">
-        <img src="images/logo-small.png">
-        <a class="fa fa-comment" href=" ../other_pages/chat.html ">Chat</a>
-        <a class="fa fa-phone" href=" ../other_pages/orderbyphone.html ">Order by phone</a>
-        <a class="fa fa-cogs" href=" ../other_pages/order.html ">How to order</a>
-        <a class="fa fa-camera" href=" ../other_pages/gallery.html ">Gallery</a>
-        <a class="fa fa-bars" href=" ../other_pages/theflorist.html ">The florist</a>
-        <a class="fa fa-envelope" href=" ../contact/contact.html ">Contact us</a>
-        <a class="fa fa-home" href=" index.html ">Home</a>
+        <img src="../images/logo-small.png">
+        <a class="fa fa-comment" href="../ other_pages/chat.html ">Chat</a>
+        <a class="fa fa-phone" href="../ other_pages/orderbyphone.html ">Order by phone</a>
+        <a class="fa fa-cogs" href="../ other_pages/order.html ">How to order</a>
+        <a class="fa fa-camera" href="../ other_pages/gallery.html ">Gallery</a>
+        <a class="fa fa-bars" href="../ other_pages/theflorist.html ">The florist</a>
+        <a class="fa fa-envelope" href="# ">Contact us</a>
+        <a class="fa fa-home" href="../home.html ">Home</a>
     </header>
 <div style="padding-left:100px; padding-right: 100px;">
-    <img src="images/euroflora-logo.png" alt="" style="margin-left: 30%;">
+    <img src="../images/euroflora-logo.png" alt="" style="margin-left: 30%;">
     <p style="font-size: 19px;">We are Online! Welcome to Instant Answer Messaging. During the opening hours of the shop, your
         request will be read and managed in real time. If you have already placed an order you can call the
         phone number dedicated to the customers, you received in the summary email.</p>
