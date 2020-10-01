@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
 
     <title>Contact</title>
 
@@ -28,7 +27,9 @@
         request will be read and managed in real time. If you have already placed an order you can call the
         phone number dedicated to the customers, you received in the summary email.</p>
 
-        <form action="_contact.php" method="GET">
+        <a href="view.php"><button>View</button></a>
+
+        <form action="_contact.php" method="POST" enctype="multipart/form-data">
             <div class="box1">
                 <div class="boxx"><label for="">Name*</label></div>
                 <div><input type="text" name="names" id="" style="width: 1000px;" required></div>
@@ -55,7 +56,7 @@
             </div><br>
             <div class="box1">
                 <div class="boxx"><label for="">Attachment</label></div>
-                <div><input type="file" name="attachment" id=""></div>
+                <div><input type="file" name="file" id=""></div>
             </div><br><br> 
             <input type="submit" value="Start">
 

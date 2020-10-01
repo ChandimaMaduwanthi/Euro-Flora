@@ -27,7 +27,7 @@ try{
     if($stmt->rowCount()==1){
         $filepath = "files/".$attachment;
         move_uploaded_file($filetempname,$filepath);
-        echo "File uploaded";
+        header("Location: contact.php?er=1");
     }
 
 }catch(PDOException $e){
