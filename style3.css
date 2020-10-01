@@ -25,7 +25,7 @@ form{
     width: 110px;
 }
 
-input[type="date"], input[type="number"], input[type="text"], input[type="tel"], input[type="file"], select{
+input[type="date"], input[type="number"], input[type="text"], input[type="tel"], input[type="file"], input[type="email"], select{
     height: 30px;
     border-radius: 5px;
 }

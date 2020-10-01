@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
 
     <title>Contact</title>
+
 </head>
 <body style="background-color: white;">
     <header class="main_header">
@@ -27,21 +28,22 @@
         request will be read and managed in real time. If you have already placed an order you can call the
         phone number dedicated to the customers, you received in the summary email.</p>
 
-        <form action="">
+        <form action="_contact.php" method="GET">
             <div class="box1">
                 <div class="boxx"><label for="">Name*</label></div>
-                <div><input type="text" name="" id="" style="width: 1000px;" required></div>
+                <div><input type="text" name="names" id="" style="width: 1000px;" required></div>
             </div><br><br>
             <div class="box1">
                 <div class="boxx"><label for="">E-Mail*</label></div>
-                <div><input type="text" name="" id="" style="width: 1000px;" required></div>
+                <div><input type="email" name="emails" id="" style="width: 1000px;" required></div>
             </div><br><br>
             <div class="box1">
                 <div class="boxx"><label for="">Phone* </label></div>
                 <div><select name="" id="" style="width: 500px;">
                     <option value="">Sri Lanka 94+</option>
                 </select>
-                <input type="tel" name="phone" id="" placeholder="Mobile number" style="width: 500px;" required></div>
+                <input type="tel" name="phone" id="" placeholder="Mobile number" style="width: 500px;" required pattern="[0-9]{10}"></div>
+                <div id="message1"></div>
             </div><br><br>
             <div class="box1">
                 <div class="boxx"><label for="">Order code</label></div>
