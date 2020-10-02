@@ -27,7 +27,7 @@
         request will be read and managed in real time. If you have already placed an order you can call the
         phone number dedicated to the customers, you received in the summary email.</p>
 
-        <a href="contact/view.php"><button>View</button></a>
+        <a href="view.php"><button>View</button></a>
 
         <form action="_contact.php" method="POST" enctype="multipart/form-data">
             <div class="box1">
@@ -42,9 +42,10 @@
                 <div class="boxx"><label for="">Phone* </label></div>
                 <div><select name="" id="" style="width: 500px;">
                     <option value="">Sri Lanka 94+</option>
+                    <option value=""></option>
+                    <option value=""></option>
                 </select>
                 <input type="tel" name="phone" id="" placeholder="Mobile number" style="width: 500px;" required pattern="[0-9]{10}"></div>
-                <div id="message1"></div>
             </div><br><br>
             <div class="box1">
                 <div class="boxx"><label for="">Order code</label></div>

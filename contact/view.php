@@ -1,6 +1,6 @@
 <?php
 
-include 'db.php';
+include '../db.php';
 
 $sql = "SELECT * FROM contact";
 $stmt = $conn->prepare($sql);
@@ -11,7 +11,7 @@ $result=$stmt->fetchAll();
 
 if(sizeof($result)!=0){
     foreach($result as $row){
-        echo "<br><img src=\"files/".$row['attachment']."\" width=\"300px\" height=\"300px\"><br>".$row['name']."<br>".$row['email']."<br>";
+        echo "<br><img src=\"../files/".$row['attachment']."\" width=\"300px\" height=\"300px\"><br>".$row['name']."<br>".$row['email']."<br>";
     }
 }
 

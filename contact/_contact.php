@@ -1,6 +1,6 @@
 <?php
 
-include 'db.php';
+include '../db.php';
 
 $name = $_REQUEST['names'];
 $email = $_REQUEST['emails'];
@@ -20,12 +20,22 @@ $fileext = strtolower(end(explode(".", $filename)));
 $attachment = uniqid('',true).".".$fileext;
 
 try{
-    $sql = "INSERT INTO `contact`(`name`, `email`, `phone`, `order_code`, `message`, `attachment`) VALUES ('".$name."','".$email."','".$phone."','".$ordercode."','".$message."','".$attachment."')";
+    // $sql = "INSERT INTO `contact`(`name`, `email`, `phone`, `order_code`, `message`, `attachment`) VALUES ('".$name."','".$email."','".$phone."','".$ordercode."','".$message."','".$attachment."')";
+    $sql = "INSERT INTO `contact`(`name`, `email`, `phone`, `order_code`, `message`, `attachment`) VALUES (:name,:email,:phone,:ordercode,:message,:attachment)";
+    
     $stmt= $conn->prepare($sql);
+    $stmt->bindParam(':name',$name);
+    $stmt->bindParam(':email',$email);
+    $stmt->bindParam(':phone',$phone);
+    $stmt->bindParam(':ordercode',$ordercode);
+    $stmt->bindParam(':message',$message);
+    $stmt->bindParam(':attachment',$attachment);
+
+    
     $stmt->execute();
 
     if($stmt->rowCount()==1){
-        $filepath = "files/".$attachment;
+        $filepath = "../files/".$attachment;
         move_uploaded_file($filetempname,$filepath);
         header("Location: contact.php?er=1");
     }
